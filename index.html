@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="main-container">
+      <div class="heading">
+        <h1>TODO</h1>
+        <button>
+          <img
+            src="./images/icon-moon.svg"
+            alt=""
+            id="image"
+            style="color: black"
+          />
+        </button>
+      </div>
+      <div class="input">
+        <span id="inputCheck"></span>
+        <input type="text" placeholder="Create a new todo" id="todoInput" />
+      </div>
+
+      <div class="main-section">
+        <div class="todos"></div>
+        <!-- Add dynamic number -->
+        <div class="links">
+          <div class="count">
+            <p><span id="count"></span> items left</p>
+          </div>
+          <div class="link">
+            <div>
+              <a href="/">All</a>
+              <a href="/active.html">Active</a>
+              <a href="/completed.html">Completed</a>
+            </div>
+          </div>
+          <button class="clear">Clear Completed</button>
+        </div>
+      </div>
+      <div class="linkTwo">
+          <a href="/">All</a>
+          <a href="/active.html">Active</a>
+          <a href="/completed.html">Completed</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

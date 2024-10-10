@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  height: 300px;
+  width: 100vw;
+  background: url("./images/bg-desktop-light.jpg") no-repeat;
+  background-size: cover;
+}
+
+.main-container {
+  width: 600px;
+  margin: -100px auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.heading h1 {
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+}
+
+.heading button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: white;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+#inputCheck,
+#checkBox {
+  height: 20px;
+  width: 20px;
+  border: 2px solid hsl(240, 1%, 32%);
+  cursor: pointer;
+  margin: auto 15px;
+  border-radius: 50%;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  width: 100%;
+  background: transparent;
+}
+
+.main-section {
+  background: white;
+  border-radius: 6px;
+  max-height: 400px;
+}
+
+.todos {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todos p {
+  padding-left: 10px;
+  height: 60px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#todo {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+#todo p {
+  width: 100%;
+}
+
+#cross {
+  position: absolute;
+  right: 10px;
+  color: gray;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.link {
+  display: flex;
+  gap: 60px;
+}
+
+.link div {
+  display: flex;
+  gap: 15px;
+}
+
+.link a {
+  text-decoration: none;
+  color: hsl(236, 9%, 61%);
+}
+
+.link a:hover, .linkTwo a:hover {
+  color: black;
+  font-weight: 600;
+}
+
+.link a:active {
+  color: blue;
+}
+
+.clear {
+  border: none;
+  background: transparent;
+}
+
+.linkTwo{
+  display: none;
+}
+
+@media (max-width: 630px) {
+  .main-container {
+    width: 500px;
+  }
+}
+@media (max-width: 520px) {
+  .main-container {
+    height: 100%;
+    width: 300px;
+  }
+  .link div{
+    display: none;
+  }
+  .linkTwo{
+    display: flex;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    justify-content: space-between;
+  }
+  .linkTwo a{
+    color: hsl(236, 9%, 61%);
+    text-decoration: none;
+  }
+}
